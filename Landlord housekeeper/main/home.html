@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+	<style>
+		.mui-table-view {
+			margin-top: 0px;
+		}
+		.daojishi {
+			display: block;
+			width: 18%;
+			padding: 0px;
+			float: left;
+			border-right:inset;
+		}
+		.daojishi_head {
+			display: block;
+			font-size: 10px;
+			margin-top: 0px;
+			color: #6d6d6d;
+		}
+			
+		.daojishi_time {
+			font-size: 30px;
+			color: black;
+		}
+
+		.daojishi_day {
+			font-size: 10px;
+			margin-right: 0px;	
+			color: #6d6d6d;
+		}
+		.detail {
+			margin-top: 5px;
+			margin-left: 20px;
+			display: block;
+			float: left;
+			width: 70%;
+			font-size: 15px;
+		}
+		.money {
+			color: #6D6D6D;
+		}
+	</style>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">首页</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../images/yuantiao.jpg">
+							<p class="mui-slider-title">第一个广告页</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/shuijiao.jpg">
+							<p class="mui-slider-title">第二个广告页</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/muwu.jpg">
+							<p class="mui-slider-title">第三个广告页，静静的喝咖啡</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/cbd.jpg">
+							<p class="mui-slider-title">Color of SIP CBD</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/yuantiao.jpg">
+							<p class="mui-slider-title">静静看这世界</p>
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../images/shuijiao.jpg">
+							<p class="mui-slider-title">幸福就是可以一起睡觉</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator mui-text-right">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell" style="60px">
+					<div class="daojishi">
+						<div class="daojishi_head">
+							收租还剩
+						</div>
+						<div class="daojishi_time">
+							3
+							<span class="daojishi_day mui-right">
+								天
+							</span>
+						</div>
+					</div>
+					<div class="detail" style="">
+						<div class="name">
+							韩梅梅
+							<span class="address" style="margin-left: 10px;">
+								租金：3500
+							</span>
+						</div>
+						<div class="money">
+							七里岗花园社区88号401
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell" style="60px">
+					<div class="daojishi">
+						<div class="daojishi_head">
+							收租还剩
+						</div>
+						<div class="daojishi_time">
+							3
+							<span class="daojishi_day mui-right">
+								天
+							</span>
+						</div>
+					</div>
+					<div class="detail" style="">
+						<div class="name">
+							韩梅梅
+							<span class="address" style="margin-left: 10px;">
+								租金：3500
+							</span>
+						</div>
+						<div class="money">
+							七里岗花园社区88号401
+						</div>
+					</div>
+				</li><li class="mui-table-view-cell" style="60px">
+					<div class="daojishi">
+						<div class="daojishi_head">
+							收租还剩
+						</div>
+						<div class="daojishi_time">
+							3
+							<span class="daojishi_day mui-right">
+								天
+							</span>
+						</div>
+					</div>
+					<div class="detail" style="">
+						<div class="name">
+							韩梅梅
+							<span class="address" style="margin-left: 10px;">
+								租金：3500
+							</span>
+						</div>
+						<div class="money">
+							七里岗花园社区88号401
+						</div>
+					</div>
+				</li>
+			</ul>
+	</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			var slider = mui("#slider");
+			slider.slider({
+					interval: 2000
+			});
+		</script>
+	</body>
+
+</html>
